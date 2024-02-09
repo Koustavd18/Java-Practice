@@ -5,7 +5,7 @@ public class Array {
 
         int num[] = {3,7,2,4};
 
-        num[3] = 5;
+        System.out.println(num);
 
         for (int i = 0; i<4;i++){
             System.out.println(num[i]);
