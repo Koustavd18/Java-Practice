@@ -3,6 +3,11 @@ class Phone {
     int price;
     static String type;
 
+    public Phone() {
+        brand = "Mobile Brand";
+        price =200;
+    }
+
     static{
         type = "Regular Phone";
     }
@@ -24,8 +29,8 @@ class PracStatic{
         Phone.type = "SmartPhone";
 
         Phone obj2 = new Phone();
-        obj2.brand = "Samsung";
-        obj2.price = 800;
+        // obj2.brand = "Samsung";
+        // obj2.price = 800;
 
         obj1.show();
         obj2.show();
