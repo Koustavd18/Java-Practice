@@ -21,5 +21,13 @@ class ThreeD{
             }
             System.out.println();
         }
+
+        int arr2[] = {1,2,3,5,5,6};
+
+        System.out.println("The length of arr2 is => " +arr2.length);
+
+        for(int i  = 0; i< arr2.length; i++ ){
+            System.out.print(arr2[i] + " ");
+        }
     }
 }
