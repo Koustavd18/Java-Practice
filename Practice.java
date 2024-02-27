@@ -1,5 +1,5 @@
-class Practice{
-    public static void main ( String[] args ){
+class Practice {
+    public static void main(String[] args) {
         String name = "Batman";
         System.out.println("Superhero -> " + name);
 

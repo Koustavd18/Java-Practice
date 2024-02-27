@@ -7,11 +7,9 @@ class Calculato
         System.out.println("add from Calculator class");
         return a+b;
     }
-
     public int add(int a, int b, int c){
         return a+b+c;
     }
-
     public void lala(){
         System.out.println("LALLALALLALA");
     }
