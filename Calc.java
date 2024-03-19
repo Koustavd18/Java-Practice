@@ -23,6 +23,7 @@ class Calcu {
 class Calc {
     public static void main(String[] args) {
 
+
         Advcal ca = new Advcal();
 
         System.out.println(ca.add(2, 4));
