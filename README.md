@@ -23,7 +23,6 @@ Java-Practice/
 | **Arrays** | `Array`, `ArrObj`, `Matrix`, `Jagged`, `ThreeD` |
 | **OOP** | `Encap`, `Ovrrding`, `Cars`, `Ano`, `InnerClass`, `PracStatic`, `Ths`, `Face` |
 | **Practice** | `Calc`, `Advcal`, `Demo`, `Practice`, `Username` |
-| **Quiz app** | `Question`, `QuestionService`, `Main` |
 
 ---
 
