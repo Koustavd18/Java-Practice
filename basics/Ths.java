@@ -1,5 +1,5 @@
 
-
+@Deprecated
 class A {
     public A() {
         System.out.println("in A");
@@ -24,11 +24,9 @@ class B extends A {
     }
 }
 
-
 class Ths {
     public static void main(String args[]) {
         B Bee = new B(5);
-
 
     }
 }

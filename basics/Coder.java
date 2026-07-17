@@ -2,43 +2,69 @@ interface Computer {
     void code();
 }
 
-enum Status{
-    coding, analysing, researching, debugging, fixing;
+@FunctionalInterface
+interface A {
+    int go(int i);
 }
 
+enum Status {
+    coding("Java"), analysing("Maven"), researching("Spring"), debugging("REST"), fixing;
 
- class Laptop implements Computer {
-    public void code(){
+    private String sub;
+
+    private Status(String s) {
+        this.sub = s;
+    };
+
+    private Status() {
+        this.sub = "secret";
+    }
+
+    public String getSub() {
+        return sub;
+    }
+
+    public void setSub(String s) {
+        this.sub = s;
+    }
+
+}
+
+class Laptop implements Computer {
+
+    @Override
+    public void code() {
         System.out.println("Coding in a thinkpad");
     }
 }
 
+class Desktop implements Computer {
 
- class Desktop implements Computer{
- public void code(){
-    System.out.println("coding");
- }
+    @Override
+    public void code() {
+        System.out.println("coding");
+    }
 }
 
-public class Coder{
+public class Coder {
 
-    public static void main(String s[]){
+    public static void main(String s[]) {
 
         Computer l = new Laptop();
-        Computer d =new Desktop();
-        
+        Computer d = new Desktop();
+
         Status[] stat = Status.values();
 
-        for (Status st : stat){
-            System.out.println(st);
+        for (Status st : stat) {
+            System.out.println(st + " : " + st.getSub());
         }
 
         l.code();
         d.code();
+
+        A obj = i -> i * 2;
+
+        System.out.println(obj.go(10));
     }
-
-
-
-
 
 }

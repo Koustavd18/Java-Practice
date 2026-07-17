@@ -1,10 +1,10 @@
+@Deprecated
 class Human {
     private int age;
     private String name;
 
-
     public Human(int age, String name) {
-        this.age = 12;
+        this.age = age;
         this.name = name;
     }
 
@@ -34,6 +34,6 @@ public class Encap {
         obj.setName("Nameless Human");
 
         System.out.println(obj.getName() + ":" + obj.getAge());
-        8
+
     }
 }

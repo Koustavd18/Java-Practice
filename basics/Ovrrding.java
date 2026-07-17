@@ -1,3 +1,5 @@
+
+@Deprecated
 class A {
     public void show() {
         System.out.println("In A show");
@@ -35,7 +37,6 @@ class Ovrrding {
         int i = (int) d;
 
         System.out.println(i);
-
 
     }
 }
