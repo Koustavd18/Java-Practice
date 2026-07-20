@@ -1,24 +1,24 @@
 
 @Deprecated
-class A {
-    public A() {
+class Ab {
+    public Ab() {
         System.out.println("in A");
     }
 
-    public A(int n) {
+    public Ab(int n) {
         this();
         System.out.println("in A int");
     }
 
 }
 
-class B extends A {
-    public B() {
+class Bb extends Ab {
+    public Bb() {
         super(5);
         System.out.println("in B");
     }
 
-    public B(int n) {
+    public Bb(int n) {
         this();
         System.out.println("in b int");
     }
@@ -26,7 +26,7 @@ class B extends A {
 
 class Ths {
     public static void main(String args[]) {
-        B Bee = new B(5);
+        Bb Bee = new Bb(5);
 
     }
 }

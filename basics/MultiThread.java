@@ -1,6 +1,7 @@
 
 class Loop1 implements Runnable {
 
+    @Override
     public void run() {
         for (int i = 0; i < 10; i++) {
             System.out.println("LOOP - 1");
@@ -17,6 +18,7 @@ class Loop1 implements Runnable {
 
 class Loop2 implements Runnable {
 
+    @Override
     public void run() {
 
         for (int i = 0; i < 10; i++) {

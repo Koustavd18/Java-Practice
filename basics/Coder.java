@@ -3,7 +3,7 @@ interface Computer {
 }
 
 @FunctionalInterface
-interface A {
+interface Aa {
     int go(int i);
 }
 
@@ -62,7 +62,7 @@ public class Coder {
         l.code();
         d.code();
 
-        A obj = i -> i * 2;
+        Aa obj = i -> i * 2;
 
         System.out.println(obj.go(10));
     }
